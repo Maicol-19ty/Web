@@ -1,0 +1,135 @@
+<!--
+Author: Maicol Montoya
+Author URI: http://maicol.social
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Maicol Montoya | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link ref="mask-icon" href="/safari-pined-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Asap:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+
+    <!-- CSS -->
+    <link href="styles/boostrap.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/move-top.js"></script>
+    <script type="text/javascript" src="assets/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuerry(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            })
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Container -->
+    <!-- Header -->
+    <div id="home" class="header">
+        <div class="container">
+            <div class="top-header">
+                <div class="top-nav">
+                    <div class="naviogation">
+                        <div class="logo">
+                        <h1><a href="index.html"><span>I</span> AM</a></h1>
+                        </div>
+                        <div class="navigation-right">
+                            <span class="menu"><img src="img/menu.png" alt=" "/></span>
+                            <nav class="link-effect-3" id="link-effect-3">
+                                <ul class="nav1 nav nav-wil">
+                                    <li class="active"><a data-hover="Home" href="index.html">Home</a></li>
+                                    <li><a data-hover="About" href="about.html">About</a></li>
+                                    <li><a data-hover="Skills" href="skills.html">Skills</a></li>
+                                    <li><a data-hover="Experience" href="experience.html">Experience</a></li>
+                                    <li><a data-hover="Contact" href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <script>
+                                $("span.menu").click(function () {
+                                    $(".nav1").slideToggle(300, function () {// Animation complete.
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="banner-info">
+                    <div class="col-md-7 header-right">
+                        <h1>Maicol Montoya</h1>
+                        <h6>Software engineering student from Colombia</h6>
+                        <div class="hero_links">
+                            <a href="currilum" target="_blank" class="hero_resume btn" title="Click to view my Curriculum Vitae">View Curriculum</a>
+                            <li>
+                                <a href="https://github.com/Maicol-19ty" rel="noopener" target="_blank" title="GitHub">
+                                    <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792" xmlnx="https://www.w3.org/2000/svg">
+                                        <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Maicol19ty" rel="noopener" target="_blank" title="Twitter">
+                                   <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792" xmlnx="https://www.w3.org/2000/svg">
+                                       <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
+                                   </svg>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <ul class="address">
+
+                        <li>
+                            <ul class="address-text">
+                                <li><b>NAME </b></li>
+                                <li>Maicol Montoya</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>PHONE </b></li>
+                                <li>+57 322 585 16 83</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>ADDRESS </b></li>
+                                <li>Colombia, Armenia</li>
+                            </ul>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>EMAIL </b></li>
+                                <li><a href="mailto:maicolmontoya323@gmail.com"> maicolmontoya323@gmail.com</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>WEBSITE </b></li>
+                                <li><a href="https://maicol-19ty.github.io/"> maicol-19ty.github.io</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+</body>
+
+</html>
