@@ -3,18 +3,18 @@
     $.fn.extend({
         easyResponsiveTabs: function (options) {
             //Set the default values, use comma to separate the settings, example:
-            var defaults = {
+            let defaults = {
                 type: 'default', //default, vertical, accordion;
                 width: 'auto',
                 fit: true
             }
             //Variables
             var options = $.extend(defaults, options);
-            var opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical', accord = 'accordion';
+            let opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical', accord = 'accordion';
 
             //Main function
             this.each(function () {
-                var $respTabs = $(this);
+                let $respTabs = $(this);
                 $respTabs.find('ul.resp-tabs-list li').addClass('resp-tab-item');
                 $respTabs.css({
                     'display': 'block',
@@ -38,20 +38,20 @@
                 }
 
                 //Assigning the h2 markup
-                var $tabItemh2;
+                let $tabItemh2;
                 $respTabs.find('.resp-tab-content').before("<h2 class='resp-accordion' role='tab'><span class='resp-arrow'></span></h2>");
 
-                var itemCount = 0;
+                let itemCount = 0;
                 $respTabs.find('.resp-accordion').each(function () {
                     $tabItemh2 = $(this);
-                    var innertext = $respTabs.find('.resp-tab-item:eq(' + itemCount + ')').text();
+                    let innertext = $respTabs.find('.resp-tab-item:eq(' + itemCount + ')').text();
                     $respTabs.find('.resp-accordion:eq(' + itemCount + ')').append(innertext);
                     $tabItemh2.attr('aria-controls', 'tab_item-' + (itemCount));
                     itemCount++;
                 });
 
                 //Assigning the 'aria-controls' to Tab items
-                var count = 0,
+                let count = 0,
                     $tabContent;
                 $respTabs.find('.resp-tab-item').each(function () {
                     $tabItem = $(this);
@@ -64,7 +64,7 @@
                     $respTabs.find('.resp-tab-content').first().addClass('resp-tab-content-active').attr('style', 'display:block');
 
                     //Assigning the 'aria-labelledby' attr to tab-content
-                    var tabcount = 0;
+                    let tabcount = 0;
                     $respTabs.find('.resp-tab-content').each(function () {
                         $tabContent = $(this);
                         $tabContent.attr('aria-labelledby', 'tab_item-' + (tabcount));
@@ -75,7 +75,7 @@
 
                 //Tab Click action function
                 $respTabs.find("[role=tab]").each(function () {
-                    var $currentTab = $(this);
+                    let $currentTab = $(this);
                     $currentTab.click(function () {
 
                         var $tabAria = $currentTab.attr('aria-controls');
