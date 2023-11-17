@@ -673,6 +673,7 @@ span.border.one:after {
     font-size: 1.2em;
     color: #00C6D7;
     font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
 .wthree_about_right_grid_right p {
@@ -680,6 +681,10 @@ span.border.one:after {
     color: #586371;
     line-height: 1.9em;
     font-size: 0.9em;
+}
+
+.wthree_about_right_grid_right ul.news {
+    margin-top: 0;
 }
 
 .wthree_about_right_grid_right {
