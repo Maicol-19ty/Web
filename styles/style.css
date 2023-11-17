@@ -384,6 +384,12 @@ ul.news li {
     list-style: none;
     cursor: default;
     font-size: 1em;
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+ul.news {
+    white-space: nowrap;
 }
 
 ul.news li i {
