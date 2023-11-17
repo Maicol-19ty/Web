@@ -673,7 +673,12 @@ span.border.one:after {
     font-size: 1.2em;
     color: #00C6D7;
     font-weight: bold;
-    margin-bottom: 0.10em;
+    margin-bottom: 0.5em;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .wthree_about_right_grid_right p {
@@ -684,10 +689,13 @@ span.border.one:after {
 }
 
 .wthree_about_right_grid_right ul.news {
-    margin-top: 0;
+    margin-top: 1em;
 }
 
 .wthree_about_right_grid_right {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
     padding-right: 0;
 }
 
